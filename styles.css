@@ -1,0 +1,82 @@
+/* Center the stopwatch container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #161616; /* dark background */
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    text-align: center;
+    width: 300px;
+    background-color: #212121; /* slightly lighter black for container */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.time-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#display {
+    font-size: 60px;
+    color: #ff5722; /* orange color for time display */
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.controls {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+button {
+    font-size: 18px;
+    padding: 10px 25px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    cursor: pointer;
+    color: white;
+}
+
+button#lap {
+    background-color: #424242; /* dark gray for lap/reset button */
+}
+
+button#start-stop {
+    background-color: green; /* green for start */
+}
+
+button#start-stop.stop {
+    background-color: #b71c1c; /* red for stop */
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    color: white;
+}
+
+ul li {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #424242;
+    padding-bottom: 5px;
+}
+
+ul li span {
+    font-size: 18px;
+}
